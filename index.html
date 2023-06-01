@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SummerCraft | Sri Lankan Earth SMP Minecraft Server</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/5acf4d9e80.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#vote">Vote Us</a></li>
+        <img class="logo" src="logo.png" width="5%" height="5%">
+        <li><a href="#store">Store</a></li>
+        <li><a href="#rules">Rules</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>   
+  <div class="center">
+    <div class="animate__animated animate__jackInTheBox">
+        <h1>Welcome to Summercraft SMP Sri Lanka</h1>
+        <p id="ip">mc.summercraft.xzy</p>
+        <div class="animate__animated animate__bounceIn animate__delay-1s">
+            <a href="https://discord.gg/SdKWVQdwED" target="_blank"><button class="btn1"><i class="fab fa-discord"></i> Discord</button></a>
+            <a href="#"><button class="btn2"><i class="fas fa-shopping-basket"></i> Store</button></a>
+            <a href="#"><button class="btn3"><i class="fas fa-poll"></i> Vote</button></a>
+        </div>
+    </div>
+</div>
+
+  </main>
+
+  <footer>
+    &copy; 2023 Summercaft ❤️. All rights reserved.
+  </footer>
+  <script>
+    document.getElementById("ip").onclick = function() {
+      /* Get the text from the element */
+      var textToCopy = this.textContent;
+
+      /* Create a temporary input element */
+      var tempInput = document.createElement("input");
+      tempInput.setAttribute("value", textToCopy);
+      document.body.appendChild(tempInput);
+
+      /* Select the text in the input element */
+      tempInput.select();
+      tempInput.setSelectionRange(0, 99999); /* For mobile devices */
+
+      /* Copy the selected text to the clipboard */
+      document.execCommand("copy");
+
+      /* Remove the temporary input element */
+      document.body.removeChild(tempInput);
+
+      /* Optionally, provide some feedback to the user */
+      alert("Text copied to clipboard: " + textToCopy);
+    };
+  </script>
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/5acf4d9e80.js" crossorigin="anonymous"></script>
+</body>
+</html>
