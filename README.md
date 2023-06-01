@@ -29,7 +29,7 @@ The SummerCraft website is built using HTML, CSS, and JavaScript. It features a 
 To use this code, simply clone the repository and open the `index.html` file in a web browser. You may also need to update the links to external stylesheets and scripts, such as `styles.css`, `script.js`, and the FontAwesome kit.
 
 ```bash
-git clone https://github.com/your-username/summercraft-website.git
+git clone https://github.com/SathiraSriSathsara/minecraft-website.git
 ``` 
 
 ## Contributing
